@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      if(true){
+        alert('result:true');
+      }
+      if(false)
+      {
+        alert('result:true');
+      }
+      //false영역은 실행 걍 안댐
+      var id=prompt('아이디 입력해');
+      var password=prompt('비번입력해');
+      if(id=='egoing' && password=='111111'){
+          alert('로그인 하셨습니다.' +id+'님 반갑습니다');
+        }
+        else{
+          alert('다름');
+        }
+    </script>
+</body>
+</html>
+<!-- 비교연산자, 일치연산자(===), 부정 != 부등호,  논리(&&,||,!)
+boolean(true, false) 1,0
+if('')->false로 간주 빈문자열을 따라서 실행 안되는 영역
+undefined->false로 간주 , !null = true null은 false로 간주-->
