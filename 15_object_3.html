@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var grade ={
+        'list' : {'egoing':10, 'k8805':8, 'soliargi':80},
+        'show':function()
+        {
+  //        alert('hello world');
+            for(var name in this.list){
+              console.log(name, this.list[name]);
+            }
+        //    console.log(this.list);
+        }
+      }
+      //객체는 함수도 담을 수 있다!!
+      //this : 이 함수가 속하는 객체를 가리키는 변수
+  //    grade['show']();
+    grade.show();
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function get_argument(arg){
+        return arg*1000;
+      }
+      alert(get_argument(1));
+      alert(get_argument(2));
+      //인자
+      function get_arguments(arg1,arg2){
+        return arg1+arg2;
+      }
+    alert(get_argument(10,20));
+////////////////////////////////////////////
+//함수를 정의하는 방법들
+function numbering1(){
+
+}
+numbering2=function(){
+      i=0;
+      while(i<10){
+        document.write(i);
+        i+=1;
+      }
+    }
+
+(function(){
+      i=0;
+      while(i<10){
+        document.write(i);
+        i+=1;
+      }
+    })(); //익명 함수
+
+    </script>
+</body>
+</html>
