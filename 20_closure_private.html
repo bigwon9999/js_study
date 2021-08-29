@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function factory_movie(title){
+        return{
+          get_title:function(){ //메소드
+            return title;
+          },
+          set_title:function(_title){ //메소드
+            if(typeof _title ==='String')
+            {
+              title=_title
+            }
+            else {
+              alert('문자열이어야합니다');
+            }
+          }
+        }
+      }
+      ghost = factory_movie('Ghost in the shell');
+      matrix = factory_movie('Matrix');
+      alert(ghost.get_title());
+      alert(matrix.get_title());
+      ghost.set_title('공각기동대')
+
+      alert(ghost.get_title());
+      alert(matrix.get_title());
+    </script>
+</body>
+</html>

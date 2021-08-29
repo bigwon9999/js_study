@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      //정규표현식 리터럴
+      var str = "a";
+
+      var pattern =/a/;
+      //찾고자 하는 문자를 슬래시 사이에 위치한다
+      var pattern = new RegExp('a');
+      //정규표현식 객체 생성자
+      // 두 가지 방법
+      //정규 표현식을 컴파일해서 객체를 만든것 (패턴을 만듦)
+
+      //이제 문자열에서 원하는 문자를 찾아내야 함
+      // (패턴에 해당하는 정보를 추출)
+      pattern.exec('abcde'); // a 추출
+      pattern.exec('bcde'); // null
+      var pattern = /a./;
+      //.은 어떤 문자건 간에 하나의 문자면 됨
+      pattern.exec('abcde'); //a,b 추출
+
+
+      pattern.test('abcde'); // true
+      pattern.test('bcdef'); // false
+
+    </script>
+</body>
+</html>

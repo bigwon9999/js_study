@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      //i 옵션
+      var xi =/a/; //i옵션을 안쓰겠다
+      "Abcde".match(xi);
+      //대소문자 구분 해서 null
+      var oi = /a/i; //i옵션을 쓰겠다
+      "Abcde".match(oi);
+      //대소문자 구분은 안해서 "A"출력
+
+      //g 옵션
+      var xg=/a/;
+      "abcdea".match(xg);
+      //a가 1번만 검출
+      var og=/a/g;
+      "abcdea".match(og);
+      //a가 2번 검출
+
+      var ig = /a/ig;
+      "AabcdAa".match(ig);
+      //A,a,A,a 배열 리턴
+      
+    </script>
+</body>
+</html>

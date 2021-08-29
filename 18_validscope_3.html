@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      //전역변수의 사용
+  (function(){
+      var MYAPP = {} //객체
+      MYAPP.calculator = {
+        'left':null,
+        'right':null
+      }
+      MYAPP.coordinate={
+        'left':null,
+        'right':null
+      }
+      MYAPP.calculator.left=10;
+      MYAPP.calculator.right=20;
+      function sum(){
+        return MYAPP.calculator.left + MYAPP.calculator.right;
+      }
+      document.write(sum()); //30 출
+    }()) //이게 있으면 MYAPP은 함수의 지역 변수가 되지요44
+    //익명함수 기법 , 전역변수가 전혀 존재x
+    </script>
+</body>
+</html>

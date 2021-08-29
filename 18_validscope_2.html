@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function a(){
+         i = 0; //이 i는 var이 안붙어있음 = 전역변수 i
+      }
+      for(var i =0;i<5;i++){ //i는 전역변수
+        a();
+        documnet.write(i);
+      } // 무한반복
+      
+    </script>
+</body>
+</html>

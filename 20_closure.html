@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      //내부함수와 밀접한 관계를 가지고 있는 주제
+      //내부함수가 외부함수의 맥락(context)에 접근할 수
+      // 있는 것을 가르킨다
+      function outter(){
+        var title = 'coding everybody';
+        return function(){
+          alert(title);
+        }
+      }
+      var inner = outter();
+      inner();
+    </script>
+</body>
+</html>

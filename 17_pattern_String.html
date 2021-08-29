@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var pattern = /a/;
+      var str = 'abcdef';
+      var str2 = 'bcdefg';
+      str.match(pattern);
+      //배열로 a 리턴
+      str2.match(pattern); // null
+
+      str.replace(pattern,'A'); //Abcdef a를 A로 바꿈
+      
+    </script>
+</body>
+</html>

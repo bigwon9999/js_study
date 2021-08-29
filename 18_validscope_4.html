@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      //자바스크립트의 지역변수는 함수에서만 유효하다.
+      //{}안에서의 유효범위를 갖는
+      //밖에서 호출하면 존재하지 않은 함수를 호출한 거로 알고 에러
+      //if, for문 깉은 중괄호에서 선언된 변수는 전역으로 가능한데
+      // 함수에서 선언된 변수는 지역으로만
+
+      //정적 유효 범위 :함수가 선언된 시점에서만 유효범위를 갖는다
+      var i =5;
+      function a(){
+        var i = 10;
+        b();
+      }
+      function b(){
+        document.write(i);
+      }
+      a(); //5
+    </script>
+</body>
+</html>
